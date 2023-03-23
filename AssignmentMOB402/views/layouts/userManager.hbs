@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: auto;
+        text-align: center;
+    }
+
+    .input {
+        width: 420px;
+        margin-top: 20px;
+        border-radius: 5px;
+        height: 30px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Quản lý bán hàng</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="/product">Products</a></li>
+                        <li><a href="/productManager">Products Manager</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">User
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/user">Users</a></li>
+                        <li><a href="/userManager">Users Manager</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {{!--  --}}
+    <h2>User add new</h2>
+    <form action="" class="form">
+        <input type="text" name="id_product" placeholder="Id product" required class="input" class="input"> <br>
+        <input type="text" name="name_product" placeholder="Name product" required class="input" class="input"> <br>
+        <input type="text" name="price_product" placeholder="Price product" required class="input" class="input"> <br>
+        <input class="subscribe-button" type="submit" value="Add new User"
+            style="font-family: 'Courier New', Courier, monospace; margin-top: 20px; width: 200px; background-color: bisque;">
+    </form>
+</body>
+
+</html>
